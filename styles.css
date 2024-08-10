@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --font-inter: "Inter", sans-serif;
+
+    --color-White: #FFFFFF;
+
+    --color-light-blue-100: #F3F5FC;
+    --color-dark-blue-300: #0A3871;
+
+    --color-gray-400: #495057;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-light-blue-100);
+    font-family: var(--font-inter);
+}
+
+button {
+    width: 328px;
+    border-radius: 24px;
+    padding: 24px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header {
+    padding: 3% 0% 0% 3%;
+}
+
+.encriptador {
+    display: flex;
+    gap: 80px;
+    justify-content: end;
+    padding: 3% 3% 0% 0%;
+    height: 100%;
+}
+
+.encriptar {
+    width: 48%;
+}
+
+.encriptar__texto {
+    width: 40;
+    margin-bottom: 44%;
+    border: none;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--color-dark-blue-300);
+    background-color: var(--color-light-blue-100);
+}
+
+.encriptar__alerta {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 2%;
+}
+
+.encriptar__alerta__imagen {
+    width: 16px;
+}
+
+.encriptar__alerta__texto {
+    color: var(--color-gray-400);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.encriptar__botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.encriptar__boton {
+    border: none;
+    background-color: var(--color-dark-blue-300);
+    color: var(--color-White);
+}
+
+.desencriptar__boton {
+    background-color: #D8DFE8;
+    color: var(--color-dark-blue-300);
+    border: 1px solid var(--color-dark-blue-300);
+}
+
+.encriptado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border-radius: 32px;
+    background-color: var(--color-White);
+    box-shadow: 0px 24px 32px 8px rgba(0, 0, 0, 0.08);
+}
