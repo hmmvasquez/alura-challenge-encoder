@@ -7,29 +7,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <img class="header__logo" src="/assets/Vector.png" alt="Logo de Alura">
-    </header>
     <main class="encriptador">
-        <section class="encriptar">
-            <input type="text" class="encriptar__texto" name="encriptar__texto" id="encriptar__texto" value="Ingrese el texto aqui">
-            <div class="encriptar__alerta">
-                <img class="encriptar__alerta__imagen" src="/assets/bi_exclamation-circle-fill.svg" alt="Signo de exclamación">
-                <span class="encriptar__alerta__texto">Solo letras minúsculas y sin acentos</span>
-            </div>
-            <div class="encriptar__botones">
-                <button class="encriptar__boton">Encriptar</button>
-                <button class="desencriptar__boton">Desencriptar</button>
-            </div>
-        </section>
+        <div class="izquierda">
+            <section class="header">
+                <img class="header__logo" src="/assets/Vector.png" alt="Logo de Alura">
+            </section>
+            <section class="encriptar">
+                <input type="text" class="encriptar__texto" name="encriptar__texto" id="encriptar__texto" placeholder="Ingrese el texto aqui">
+                <div class="encriptar__alerta">
+                    <img class="encriptar__alerta__imagen" src="/assets/bi_exclamation-circle-fill.svg" alt="Signo de exclamación">
+                    <span class="encriptar__alerta__texto">Solo letras minúsculas y sin acentos</span>
+                </div>
+                <div class="encriptar__botones">
+                    <button class="encriptar__boton">Encriptar</button>
+                    <button class="desencriptar__boton">Desencriptar</button>
+                </div>
+            </section>
+        </div>
         <section class="encriptado">
-            <img class="encriptado__imagen" src="/assets/Muñeco.png" alt="Muñeco con lupa">
-            <p class="encriptado__texto__mensaje">Ningún mensaje fue encontrado</p>
-            <p class="encriptado__texto__indicacion">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div class="encriptado__ninguno">
+                <img class="encriptado__imagen" src="/assets/Muñeco.png" alt="Muñeco con lupa">
+                <p class="encriptado__texto__mensaje">Ningún mensaje fue encontrado</p>
+                <p class="encriptado__texto__indicacion">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="encriptado__mensaje">
+                <dvi class="encriptado__mensaje__mostrar">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</p>
+                </dvi>
+                <button class="encriptado__mensaje__boton">Copiar</button>
+            </div>
         </section>
     </main>
     <footer class="footer">
         <p>Desarrollado por: Haydee Melgar</p>
+        <p>Alura Latam Challenge Encriptador de Texto 2024</p>
+        <div class="footer__links">
+            <a href="https://www.linkedin.com/in/haydeevasquez/" target="_blank" rel="noopener noreferrer"><img class="footer__imagen" src="/assets/mdi_linkedin.svg" alt="Linkedin"></a>
+            <a href="https://github.com/hmmvasquez" target="_blank" rel="noopener noreferrer"><img class="footer__imagen" src="/assets/mdi_github.svg" alt="Github"></a>
+        </div>
     </footer>
 </body>
 </html>
